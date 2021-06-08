@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+
+<HBox prefHeight="455.0" prefWidth="852.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;">
+            <children>
+                <JFXButton fx:id="createTablebutton" buttonType="RAISED" layoutX="25.0" layoutY="34.0" prefWidth="150" style="-fx-background-color: blue; -fx-text-fill: grey;" styleClass="Positive Buttons" text="Create Database" />
+                <JFXButton fx:id="deleteTablebutton" buttonType="RAISED" layoutX="25.0" layoutY="68.0" prefWidth="150" style="-fx-background-color: blue; -fx-text-fill: grey;" text="Delete Table" />
+                <JFXButton fx:id="loadTablebutton" buttonType="RAISED" layoutX="25.0" layoutY="102.0" prefWidth="150" style="-fx-background-color: blue; -fx-text-fill: grey;" text="Load Table" />
+                <JFXButton fx:id="DisplayCISbutton" buttonType="RAISED" layoutX="25.0" layoutY="330.0" prefWidth="150" style="-fx-background-color: blue; -fx-text-fill: grey;" text="Display Only CIS Majors" />
+                <JFXButton fx:id="DisplayAgeButton" buttonType="RAISED" layoutX="25.0" layoutY="360.0" prefWidth="150" style="-fx-background-color: blue; -fx-text-fill: grey;" text="Display Only Young Students" />
+                <JFXButton fx:id="DisplayGPAButton" buttonType="RAISED" layoutX="25.0" layoutY="390.0" prefWidth="150" style="-fx-background-color: blue; -fx-text-fill: grey;" text="Display Only Highest GPAs" />
+            </children>
+        </Pane>
+        <VBox>
+            <children>
+                <JFXListView fx:id="studentListView" maxWidth="-Infinity" maxHeight = "-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="200.0" style="-fx-background-color: grey; -fx-border-color: #463334; -fx-font-color: black;" VBox.vgrow="ALWAYS"/>
+            </children>
+        </VBox>
+        <VBox>
+            <children>
+                <Pane prefHeight="456.0" prefWidth="301.0">
+                    <children>
+                        <JFXTextField fx:id="studentMajor" alignment="TOP_LEFT" focusColor="#fcfcfc" labelFloat="true" layoutY="264.0" prefHeight="25.0" prefWidth="301.0" promptText="Major" style="-fx-background-color: #a18a8a;" unFocusColor="#0d0d0d">
+                        </JFXTextField>
+                        <JFXTextField fx:id="studentLN" alignment="TOP_LEFT" focusColor="#fcfcfc" labelFloat="true" layoutY="140.0" prefHeight="25.0" prefWidth="301.0" promptText="First Name" style="-fx-background-color: #a18a8a;" unFocusColor="#0d0d0d">
+                        </JFXTextField>
+                        <JFXTextField fx:id="studentID" alignment="TOP_LEFT" focusColor="#fcfcfc" labelFloat="true" layoutY="25.0" prefHeight="25.0" prefWidth="301.0" promptText="Student ID" style="-fx-background-color: #a18a8a;" unFocusColor="#0d0d0d">
+                        </JFXTextField>
+                        <JFXTextField fx:id="studentFN" alignment="TOP_LEFT" focusColor="#fcfcfc" labelFloat="true" layoutY="81.0" prefHeight="25.0" prefWidth="301.0" promptText="Last Name" style="-fx-background-color: #a18a8a;" unFocusColor="#0d0d0d">
+                        </JFXTextField>
+                        <JFXTextField fx:id="studentAge" alignment="TOP_LEFT" focusColor="#fcfcfc" labelFloat="true" layoutY="201.0" prefHeight="25.0" prefWidth="301.0" promptText="Age" style="-fx-background-color: #a18a8a;" unFocusColor="#0d0d0d">
+                        </JFXTextField>
+                        <JFXTextField fx:id="studentGPA" alignment="TOP_LEFT" focusColor="#fcfcfc" labelFloat="true" layoutY="325.0" prefHeight="25.0" prefWidth="301.0" promptText="GPA" style="-fx-background-color: #a18a8a;" unFocusColor="#0d0d0d">
+                        </JFXTextField>
+                        <JFXButton fx:id="clearButton" buttonType="RAISED" alignment="TOP_LEFT" layoutY="410.0" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: blue; -fx-text-fill: grey;" text="CLEAR FIELDS" />
+                    </children>
+                </Pane>
+            </children>
+        </VBox>
+    </children>
+
+
+</HBox>
+
